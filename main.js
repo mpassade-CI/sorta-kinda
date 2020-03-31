@@ -1,8 +1,64 @@
 /******************
  * YOUR CODE HERE *
  ******************/
-
-
+const firstNumberIsLess = function(a,b){
+  if (a<b){return -1}
+  if (a===b){return 0}
+  if (a>b){return 1}
+}
+const secondNumberIsLess = function(a,b){
+  if (a<b){return 1}
+  if (a===b){return 0}
+  if (a>b){return -1}
+}
+const firstNameIsFirstAlphabetically = function(a,b){
+  if (a<b){return -1}
+  if (a===b){return 0}
+  if (a>b){return 1}
+}
+const firstLastNameIsFirstAlphabetically = function(a,b){
+  let firstLast = a.split(' ')[1]
+  let secondLast = b.split(' ')[1]
+  if (firstLast<secondLast){return -1}
+  if (firstLast===secondLast){return 0}
+  if (firstLast>secondLast){return 1}
+}
+const trueIsFirst = function(a,b){
+  if (a<b){return 1}
+  if (a===b){return 0}
+  if (a>b){return -1}
+}
+const sortByNumberAscending = function(arr){
+  const sortedArr = arr.concat()
+  sortedArr.sort(function(a,b){return a-b})
+  return sortedArr
+}
+const sortByNumberDescending = function(arr){
+  const sortedArr = arr.concat()
+  sortedArr.sort(function(a,b){return b-a})
+  return sortedArr
+}
+const truesFirst = function(arr){
+  const sortedArr = arr.concat()
+  sortedArr.sort(function(a,b){return b-a})
+  return sortedArr
+}
+const sortByNameAscending = function(arr){
+  const sortedArr = arr.concat()
+  sortedArr.sort()
+  return sortedArr
+}
+const sortByLastNameAscending = function(arr){
+  const sortedArr = arr.concat()
+  sortedArr.sort(function(a,b){
+    let firstLast = a.split(' ')[1]
+    let secondLast = b.split(' ')[1]
+    if (firstLast<secondLast){return -1}
+    if (firstLast===secondLast){return 0}
+    if (firstLast>secondLast){return 1}
+  })
+  return sortedArr
+}
 
 
 /************************
