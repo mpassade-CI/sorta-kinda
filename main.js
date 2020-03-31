@@ -30,34 +30,29 @@ const trueIsFirst = function(a,b){
 }
 const sortByNumberAscending = function(arr){
   const sortedArr = arr.concat()
-  sortedArr.sort(function(a,b){return a-b})
-  return sortedArr
+  return sortedArr.sort(function(a,b){return a-b})
 }
 const sortByNumberDescending = function(arr){
   const sortedArr = arr.concat()
-  sortedArr.sort(function(a,b){return b-a})
-  return sortedArr
+  return sortedArr.sort(function(a,b){return b-a})
 }
 const truesFirst = function(arr){
   const sortedArr = arr.concat()
-  sortedArr.sort(function(a,b){return b-a})
-  return sortedArr
+  return sortedArr.sort(function(a,b){return b-a})
 }
 const sortByNameAscending = function(arr){
   const sortedArr = arr.concat()
-  sortedArr.sort()
-  return sortedArr
+  return sortedArr.sort()
 }
 const sortByLastNameAscending = function(arr){
   const sortedArr = arr.concat()
-  sortedArr.sort(function(a,b){
+  return sortedArr.sort(function(a,b){
     let firstLast = a.split(' ')[1]
     let secondLast = b.split(' ')[1]
     if (firstLast<secondLast){return -1}
     if (firstLast===secondLast){return 0}
     if (firstLast>secondLast){return 1}
   })
-  return sortedArr
 }
 
 
